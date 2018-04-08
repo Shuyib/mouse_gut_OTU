@@ -1,0 +1,65 @@
+import pandas as pd
+df = pd.read_csv("0.16.cons.taxonomy.csv", delimiter=";",index_col=None, usecols=["otu","size","identity","phylum","class","order","family","genus","genus_0","genus_1"])
+   
+# look at the first couple of rows
+del df['otu
+df.head()
+
+# give a concise summary of the dataset
+df.info()
+
+# changing the type of the column to int32 to reduce memory usage 
+# the other columns are of the right type
+
+df['size'] = df['size'].astype('int32')
+
+# check for NaNs or missing values
+
+pd.isnull(df).any()
+
+# didn't find any
+
+# for later
+phylum = df['phylum']
+
+# one-hot-encoding 
+# Using the feature selection column
+
+# Make a boolean mask for categorical columns
+df_mask = (df.dtypes == object)
+
+# Get list of categorical column names
+df_mask_columns = df.columns[df_mask].tolist()
+
+# conversion of dataframe to dictionary 
+df_dict = df.to_dict("records")
+
+from sklearn.feature_extraction import DictVectorizer
+
+dv = DictVectorizer(sparse = False)
+
+# Apply fit_transform to our dataset
+df_encoded = dv.fit_transform(df_dict)
+
+# New column names
+print(dv.vocabulary_)
+
+# rows and number of column names in the matrix
+df_encoded.shape
+
+# matrix ready for data visualisation
+# t-SNE Creates a 2D map of a dataset
+# t-distributed stochastic neighbor embedding
+# Number of dimensions (106, 346) 106 rows and 346 dimensions 
+
+import matplotlib.pyplot as plt
+from sklearn.manifold import TSNE
+tsne = TSNE(random_state=42)
+otu_tsne = model.fit_transform(df.encoded)
+
+# with two components
+xs = otu_tsne[:,0]
+ys = otu_tsne[:,1]
+plt.scatter(xs, ys, c=phylum)
+plt.show()
+
