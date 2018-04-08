@@ -4,18 +4,18 @@ Read more about MiSeq SOP the Schloss Lab uses to process their 16S rRNA gene se
 
 ---
 Setting up your environment
+* Download Anaconda for your operating system for Python 3 [anaconda](https://www.anaconda.com/download/)
+* Create a conda environment like mine:
 
-	Create a conda environment like mine:
-	
-	`conda env create -f environment.yml`
-	
-	This creates an environment called py35. Activate it with this command in your terminal
-	
-	`source activate py35`
-	
-	In your terminal, in the directory where you cloned this repository. Run this command
-	
-	`jupyter notebook otu_data_viz.ipynb`
+  `conda env create -f environment.yml`
+
+This creates an environment called py35. Activate it with this command in your terminal
+
+  `source activate py35`
+
+* In your terminal, in the directory where you cloned this repository. Run this command
+
+  `jupyter notebook otu_data_viz.ipynb`
     
 ---
 
