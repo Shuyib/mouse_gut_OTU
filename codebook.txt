@@ -1,0 +1,23 @@
+Title: Mouse gut OTU results 
+Author: Mainye Ben 
+Version: 0.1
+
+This codebook is based on advice by J.Leek which can be found here: 
+https://github.com/jtleek/datasharing
+
+Description:
+
+This dataset was created by going through the tutorial 16S metabarcoding; It involved using the Morthur software to process 
+fastq files made available to identify the species of bacteria present in the gut of a mouse paticularly this step 
+http://77.235.253.122/tutorials/lessons/analysis/. In addition, the workflow followed is used by the Schloss laboratory at the 
+University of Michigan in the Department of Microbiology and Immunology.
+
+I preprocessed the file using regular expressions in an editor called TextWrangler resulting in a cleaner version called 
+0.16.cons.taxonomy.csv. Check the repository to find this file.
+
+Format:
+
+A DataFrame with 106 rows and 9 columns 
+
+Variables:
+
