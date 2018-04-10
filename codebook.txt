@@ -21,3 +21,22 @@ A DataFrame with 106 rows and 9 columns
 
 Variables:
 
+otu takes a string otu and number for example Otu001 this is just the count of each column.
+
+size takes an integers. This is the abundance of the particular operational taxonomic unit.
+
+identity contains strings. This is the common name of the observed organism which is mostly bacteria.
+
+phylum contains strings. Part of the taxonomy. Level of classification lower than kingdom and above class.
+
+class contains strings. Level of classification lower than phylum above order.
+
+order contains strings. Level of classification lower than phylum above family.
+
+family contains strings.Level of classification lower than phylum above genus.
+
+genus contains strings. genus comes above species and below family. Another taxonomic rank.
+
+genus_0 contains strings. Naturally this is supposed to be species, however, the bacteria found was mostly unclassified.
+
+genus_1 contains strings. Seems to be a replicate of the previous column. Will change that soon.
