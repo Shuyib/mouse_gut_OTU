@@ -8,6 +8,7 @@ Setting up your environment
 * Create a conda environment like mine:
 
   `conda env create -f environment.yml`
+
   This creates an environment called py35. Activate it with this command in your terminal
 
   `source activate py35`
@@ -18,7 +19,7 @@ Setting up your environment
     
 ---
 
-A codebook will be provided for the .csv file: I encourage you to go through the exercise [here.](http://77.235.253.122/tutorials/courses/16s-metabarcoding-analysis/) to generate the **0.16.cons.taxonomy.csv dataset**. Which was created by processing .fastq files obtained from *Mus musculus* with [Mothur](https://www.mothur.org/).
+A codebook will be provided for the .csv file: I encourage you to go through the exercise [here.](http://77.235.253.122/tutorials/courses/16s-metabarcoding-analysis/) to generate the **0.16.cons.taxonomy.csv dataset**. Which was created by processing .fastq files obtained from *Mus musculus* with [Mothur](https://www.mothur.org/). Find the notebook [here.](https://nbviewer.jupyter.org/github/Shuyib/mouse_gut_OTU/blob/master/otu_data_viz.ipynb)
 
 
  
