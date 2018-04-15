@@ -8,7 +8,7 @@ Andreas C. Müller and Sarah Guido (2017). Introduction to Machine Learning with
 
 https://docs.scipy.org/doc/numpy/reference/ accessed on Sunday April 8 13:04:50 EAT 2018
 
-https://docs.python.org/3/ Sun April 8 13:04:50 EAT 2018
+https://docs.python.org/3/ accessed on Sun April 8 13:04:50 EAT 2018
 
-
+https://github.com/datacamp/datacamp_facebook_live_dataframed accessed on Sun Apr 15 08:11:41 EAT 2018
 
